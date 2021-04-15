@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="4"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn1"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button1"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn2"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button2"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn3"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button3"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_plus"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_plus"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn4"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button4"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn5"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button5"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn6"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button6"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_minus"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_minus"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn7"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button7"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn8"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button8"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn9"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button9"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_multiply"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_multiply"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn0"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button0"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_dot"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_dot"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_equal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_equal"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_split"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_split"
+        android:textColor="@color/black" />
+
+</GridLayout>
