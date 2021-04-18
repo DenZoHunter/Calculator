@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Calcilator">
-        <activity android:name="ru.geekbrains.calculator.MainActivity">
+        <activity android:name="ru.geekbrains.calculator.ui.CalculatorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

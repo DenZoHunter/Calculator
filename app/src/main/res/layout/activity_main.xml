@@ -7,21 +7,21 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background">
 
-    <EditText
-        android:id="@+id/editText"
+    <TextView
+        android:id="@+id/bufferTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@id/resultTextView" />
 
     <TextView
-        android:id="@+id/infoTextView"
+        android:id="@+id/resultTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintBottom_toTopOf="@id/buttonPanel"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
     <include
