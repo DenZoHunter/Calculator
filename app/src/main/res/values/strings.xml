@@ -14,7 +14,7 @@
     <string name="button_plus">+</string>
     <string name="button_minus">-</string>
     <string name="button_multiply">*</string>
-    <string name="button_split">/</string>
+    <string name="button_div">/</string>
     <string name="button_equal">=</string>
 
 
