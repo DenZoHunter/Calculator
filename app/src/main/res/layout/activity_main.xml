@@ -7,22 +7,21 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background">
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/bufferTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="@dimen/text_size_for_calc_buff_view"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/resultTextView" />
+        app:layout_constraintBottom_toTopOf="@id/resultTextView"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/resultTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="@dimen/text_size_for_calc_main_view"
         app:layout_constraintBottom_toTopOf="@id/buttonPanel"
         app:layout_constraintStart_toStartOf="parent" />
-
 
     <include
         android:id="@+id/buttonPanel"

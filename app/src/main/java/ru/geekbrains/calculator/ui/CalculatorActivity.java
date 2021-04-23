@@ -69,7 +69,8 @@ public class CalculatorActivity extends AppCompatActivity implements CalculatorV
         findViewById(R.id.btn_multiply).setOnClickListener(v -> {
             presenter.setFirstOperand(Double.parseDouble(resultTextView.getText().toString()));
             presenter.onButtonMultiplyClick();
-            bufferTextView.setText(getResources().getString(R.string.result_template, resultTextView.getText(), "*"));;
+            bufferTextView.setText(getResources().getString(R.string.result_template, resultTextView.getText(), "*"));
+            ;
             resultTextView.setText("");
         });
 
