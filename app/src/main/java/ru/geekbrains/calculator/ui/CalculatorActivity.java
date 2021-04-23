@@ -25,144 +25,70 @@ public class CalculatorActivity extends AppCompatActivity implements CalculatorV
         resultTextView = findViewById(R.id.resultTextView);
         bufferTextView = findViewById(R.id.bufferTextView);
 
-        findViewById(R.id.btn_clear).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                resultTextView.setText(null);
-                bufferTextView.setText(null);
-            }
+        findViewById(R.id.btn_clear).setOnClickListener(v -> {
+            resultTextView.setText(null);
+            bufferTextView.setText(null);
         });
 
-        findViewById(R.id.btn1).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                presenter.onButtonOneClick();
-            }
+        findViewById(R.id.btn1).setOnClickListener(v -> presenter.onButtonOneClick());
+
+        findViewById(R.id.btn2).setOnClickListener(v -> presenter.onButtonTwoClick());
+
+        findViewById(R.id.btn3).setOnClickListener(v -> presenter.onButtonThreeClick());
+
+        findViewById(R.id.btn4).setOnClickListener(v -> presenter.onButtonFourClick());
+
+        findViewById(R.id.btn5).setOnClickListener(v -> presenter.onButtonFiveClick());
+
+        findViewById(R.id.btn6).setOnClickListener(v -> presenter.onButtonSixClick());
+
+        findViewById(R.id.btn7).setOnClickListener(v -> presenter.onButtonSevenClick());
+
+        findViewById(R.id.btn8).setOnClickListener(v -> presenter.onButtonEightClick());
+
+        findViewById(R.id.btn9).setOnClickListener(v -> presenter.onButtonNineClick());
+
+        findViewById(R.id.btn0).setOnClickListener(v -> presenter.onButtonZeroClick());
+
+        findViewById(R.id.btn_dot).setOnClickListener(v -> presenter.onButtonDotClick());
+
+        findViewById(R.id.btn_plus).setOnClickListener(v -> {
+            presenter.setFirstOperand(Double.parseDouble(resultTextView.getText().toString()));
+            presenter.onButtonPlusClick();
+            bufferTextView.setText(getResources().getString(R.string.result_template, resultTextView.getText(), "+"));
+            resultTextView.setText("");
         });
 
-        findViewById(R.id.btn2).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                presenter.onButtonTwoClick();
-            }
+        findViewById(R.id.btn_minus).setOnClickListener(v -> {
+            presenter.setFirstOperand(Double.parseDouble(resultTextView.getText().toString()));
+            presenter.onButtonMinusClick();
+            bufferTextView.setText(getResources().getString(R.string.result_template, resultTextView.getText(), "-"));
+            resultTextView.setText("");
         });
 
-        findViewById(R.id.btn3).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                presenter.onButtonThreeClick();
-            }
+        findViewById(R.id.btn_multiply).setOnClickListener(v -> {
+            presenter.setFirstOperand(Double.parseDouble(resultTextView.getText().toString()));
+            presenter.onButtonMultiplyClick();
+            bufferTextView.setText(getResources().getString(R.string.result_template, resultTextView.getText(), "*"));;
+            resultTextView.setText("");
         });
 
-        findViewById(R.id.btn4).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                presenter.onButtonFourClick();
-            }
+        findViewById(R.id.btn_div).setOnClickListener(v -> {
+            presenter.setFirstOperand(Double.parseDouble(resultTextView.getText().toString()));
+            presenter.onButtonDivClick();
+            bufferTextView.setText(getResources().getString(R.string.result_template, resultTextView.getText(), "/"));
+            resultTextView.setText("");
         });
 
-        findViewById(R.id.btn5).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                presenter.onButtonFiveClick();
-            }
-        });
-
-        findViewById(R.id.btn6).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                presenter.onButtonSixClick();
-            }
-        });
-
-        findViewById(R.id.btn7).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                presenter.onButtonSevenClick();
-            }
-        });
-
-        findViewById(R.id.btn8).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                presenter.onButtonEightClick();
-            }
-        });
-
-        findViewById(R.id.btn9).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                presenter.onButtonNineClick();
-            }
-        });
-
-        findViewById(R.id.btn0).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                presenter.onButtonZeroClick();
-            }
-        });
-
-        findViewById(R.id.btn_dot).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                presenter.onButtonDotClick();
-            }
-        });
-
-        findViewById(R.id.btn_plus).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                presenter.setFirstOperand(Double.parseDouble(resultTextView.getText().toString()));
-                presenter.onButtonPlusClick();
-
-                bufferTextView.setText(resultTextView.getText() + "+");
+        findViewById(R.id.btn_equal).setOnClickListener(v -> {
+            try {
+                presenter.setSecondOperand(Double.parseDouble(resultTextView.getText().toString()));
+            } catch (NumberFormatException e) {
                 resultTextView.setText("");
             }
-        });
-
-        findViewById(R.id.btn_minus).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                presenter.setFirstOperand(Double.parseDouble(resultTextView.getText().toString()));
-                presenter.onButtonMinusClick();
-                bufferTextView.setText(resultTextView.getText() + "-");
-                resultTextView.setText("");
-            }
-        });
-
-        findViewById(R.id.btn_multiply).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                presenter.setFirstOperand(Double.parseDouble(resultTextView.getText().toString()));
-                presenter.onButtonMultiplyClick();
-                bufferTextView.setText(resultTextView.getText() + "*");
-                resultTextView.setText("");
-            }
-        });
-
-        findViewById(R.id.btn_div).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                presenter.setFirstOperand(Double.parseDouble(resultTextView.getText().toString()));
-                presenter.onButtonDivClick();
-                bufferTextView.setText(resultTextView.getText() + "/");
-                resultTextView.setText("");
-            }
-        });
-
-        findViewById(R.id.btn_equal).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    presenter.setSecondOperand(Double.parseDouble(resultTextView.getText().toString()));
-                } catch (NumberFormatException e) {
-                    resultTextView.setText("");
-                }
-                bufferTextView.setText("");
-                resultTextView.setText("");
-                presenter.onButtonEqualClick();
-            }
+            bufferTextView.setText("");
+            resultTextView.setText("");
+            presenter.onButtonEqualClick();
         });
 
 

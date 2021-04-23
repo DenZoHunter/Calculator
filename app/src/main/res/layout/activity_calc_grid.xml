@@ -3,7 +3,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:columnCount="4"
+    android:columnCount="@integer/column_count"
     android:orientation="horizontal">
 
     <Button
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button1"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="@dimen/text_size_for_calc_button" />
 
     <Button
         android:id="@+id/btn2"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button2"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="@dimen/text_size_for_calc_button" />
 
     <Button
         android:id="@+id/btn3"
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button3"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="@dimen/text_size_for_calc_button" />
 
     <Button
         android:id="@+id/btn_plus"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button_plus"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="@dimen/text_size_for_calc_button" />
 
     <Button
         android:id="@+id/btn4"
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button4"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="@dimen/text_size_for_calc_button" />
 
     <Button
         android:id="@+id/btn5"
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button5"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="@dimen/text_size_for_calc_button" />
 
     <Button
         android:id="@+id/btn6"
@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button6"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="@dimen/text_size_for_calc_button" />
 
     <Button
         android:id="@+id/btn_minus"
@@ -76,7 +76,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button_minus"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="@dimen/text_size_for_calc_button" />
 
     <Button
         android:id="@+id/btn7"
@@ -85,7 +85,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button7"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="@dimen/text_size_for_calc_button" />
 
     <Button
         android:id="@+id/btn8"
@@ -94,7 +94,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button8"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="@dimen/text_size_for_calc_button" />
 
     <Button
         android:id="@+id/btn9"
@@ -103,7 +103,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button9"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="@dimen/text_size_for_calc_button" />
 
     <Button
         android:id="@+id/btn_multiply"
@@ -112,7 +112,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button_multiply"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="@dimen/text_size_for_calc_button" />
 
     <Button
         android:id="@+id/btn0"
@@ -121,7 +121,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button0"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="@dimen/text_size_for_calc_button" />
 
     <Button
         android:id="@+id/btn_dot"
@@ -130,7 +130,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button_dot"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="@dimen/text_size_for_calc_button" />
 
     <Button
         android:id="@+id/btn_equal"
@@ -138,7 +138,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button_equal"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="@dimen/text_size_for_calc_button" />
 
     <Button
         android:id="@+id/btn_div"
@@ -147,7 +147,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button_div"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="@dimen/text_size_for_calc_button" />
     <Button
         android:id="@+id/btn_clear"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
@@ -155,6 +155,6 @@
         android:layout_height="wrap_content"
         android:text="@string/button_clear"
         android:textColor="@color/purple_700"
-        android:textSize="20sp" />
+        android:textSize="@dimen/text_size_for_calc_button" />
 
 </GridLayout>
