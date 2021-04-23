@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="text_size_for_calc_button">25sp</dimen>
-    <dimen name="text_size_for_calc_buff_view">25dp</dimen>
-    <dimen name="text_size_for_calc_main_view">35dp</dimen>
+    <dimen name="text_size_for_calc_buff_view">25sp</dimen>
+    <dimen name="text_size_for_calc_main_view">35sp</dimen>
 </resources>

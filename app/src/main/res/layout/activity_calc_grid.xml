@@ -4,158 +4,110 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:columnCount="@integer/column_count"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:theme="@style/Theme.Calculator">
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn1"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button1"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_for_calc_button" />
+        android:text="@string/button1" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn2"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button2"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_for_calc_button" />
+        android:text="@string/button2" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn3"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button3"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_for_calc_button" />
+        android:text="@string/button3" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_plus"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_plus"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_for_calc_button" />
+        android:text="@string/button_plus" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn4"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button4"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_for_calc_button" />
+        android:text="@string/button4" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn5"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button5"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_for_calc_button" />
+        android:text="@string/button5" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn6"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button6"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_for_calc_button" />
+        android:text="@string/button6" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_minus"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_minus"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_for_calc_button" />
+        android:text="@string/button_minus" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn7"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button7"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_for_calc_button" />
+        android:text="@string/button7" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn8"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button8"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_for_calc_button" />
+        android:text="@string/button8" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn9"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button9"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_for_calc_button" />
+        android:text="@string/button9" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_multiply"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_multiply"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_for_calc_button" />
+        android:text="@string/button_multiply" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn0"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button0"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_for_calc_button" />
+        android:text="@string/button0" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_dot"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_dot"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_for_calc_button" />
+        android:text="@string/button_dot" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_equal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_equal"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_for_calc_button" />
+        android:text="@string/button_equal" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_div"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_div"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_for_calc_button" />
+        android:text="@string/button_div" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_clear"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_clear"
-        android:textColor="@color/purple_700"
-        android:textSize="@dimen/text_size_for_calc_button" />
+        android:textColor="@color/purple_700" />
 
 </GridLayout>
