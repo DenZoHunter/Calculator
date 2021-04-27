@@ -6,9 +6,9 @@ import ru.geekbrains.calculator.logic.Operation;
 
 public class CalculatorPresenter {
 
-    private CalculatorView view;
+    private final CalculatorView view;
 
-    private Calculator calculator;
+    private final Calculator calculator;
 
     private double firstOperand;
     private double secondOperand;
@@ -88,19 +88,15 @@ public class CalculatorPresenter {
             double result = calculator.mainOperation(firstOperand, secondOperand, Operation.ADD);
             view.showResult(result + "");
             plusCalc = false;
-        } else
-
-        if (minusCalc) {
+        } else if (minusCalc) {
             double result = calculator.mainOperation(firstOperand, secondOperand, Operation.SUB);
             view.showResult(result + "");
             minusCalc = false;
-        } else
-        if (multCalc) {
+        } else if (multCalc) {
             double result = calculator.mainOperation(firstOperand, secondOperand, Operation.MULT);
             view.showResult(result + "");
             multCalc = false;
-        } else
-        if (divCalc) {
+        } else if (divCalc) {
             double result = calculator.mainOperation(firstOperand, secondOperand, Operation.DIV);
             view.showResult(result + "");
             divCalc = false;
