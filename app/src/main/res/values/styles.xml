@@ -4,6 +4,6 @@
     <style name="CalcButtonStyle" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:textSize">@dimen/text_size_for_calc_button</item>
         <item name="android:textColor">@color/black</item>
-
     </style>
+
 </resources>
