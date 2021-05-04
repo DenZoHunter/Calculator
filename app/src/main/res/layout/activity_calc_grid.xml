@@ -4,8 +4,7 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:columnCount="@integer/column_count"
-    android:orientation="horizontal"
-    android:theme="@style/Theme.Calculator">
+    android:orientation="horizontal">
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn1"

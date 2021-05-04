@@ -18,6 +18,9 @@
     <string name="button_equal">=</string>
     <string name="button_clear">AC</string>
     <string name="result_template">%s%s</string>
+    <string name="button_light_theme">Light</string>
+    <string name="button_dark_theme">Dark</string>
+    <string name="button_settings">Settings</string>
 
 
 </resources>
